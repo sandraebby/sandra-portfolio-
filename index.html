@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ananti Sandra — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --bg: #f9fafb;
+  --primary: #2563eb;
+  --secondary: #1e40af;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --radius: 14px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: var(--radius);
+}
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+header h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+header p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+.section {
+  margin-top: 40px;
+}
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.skills span {
+  display: inline-block;
+  background: #e0e7ff;
+  color: var(--secondary);
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 999px;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+.skills span:hover {
+  background: #c7d2fe;
+}
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 20px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src='assets/profile.jpg' alt='Profile'/>
+      <h1>ANANTI SANDRA</h1>
+      <p>📧 sandraananti1581988@gmail.com | <a href="https://www.linkedin.com/in/sandra-ananti" style="color:white;">LinkedIn</a> | <a href="https://github.com/sandraebby" style="color:white;">GitHub</a> | <a href="https://share.streamlit.io/user/sandraebby" style="color:white;">Streamlit</a></p>
+    </header>
+
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <div class="card">
+        <p>Data Scientist and Machine Learning Enthusiast with a strong foundation in statistics, predictive analytics, and data visualization. Skilled in developing machine learning models, performing exploratory data analysis (EDA), and building interactive dashboards to solve real-world problems. Experienced in Python, Power BI, TensorFlow, PyTorch, Pandas, NumPy, and Scikit-learn.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span><span>Power BI</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Selected Projects</h2>
+      <div class="card"><a href="https://nihieszpewwae2hzhbaht7.streamlit.app/" target="_blank">Daily Calorie & Weight Loss Assistant (Streamlit)</a><p>Predictive model for calorie tracking and healthy food suggestions.</p></div>
+      <div class="card"><a href="https://ah8dt5kthcudynfgesjpcb.streamlit.app/" target="_blank">Diabetes Risk Prediction App (Streamlit)</a><p>Machine learning model to classify diabetes risk using health metrics.</p></div>
+      <div class="card"><a href="https://dlv7uf3hjrbdeuunornyek.streamlit.app/" target="_blank">COVID-19 Case Prediction Dashboard (Streamlit)</a><p>Interactive dashboard for visualizing and forecasting COVID-19 trends.</p></div>
+      <div class="card"><a href="https://izy9tqvnsyhzgw3u2d4bi3.streamlit.app/" target="_blank">💳 Credit Card Fraud Detection Dashboard (Streamlit)</a><p>Built an ML-powered dashboard for detecting fraudulent transactions.</p></div>
+      <div class="card"><a href="https://dlqyiqjurucewakeiqche7.streamlit.app/" target="_blank">📊 Customer Churn Predictor (Streamlit)</a><p>Designed and deployed a predictive model for customer retention.</p></div>
+      <div class="card"><a href="https://github.com/sandraebby/HSI_Forecast_stock_exchange.ipynb" target="_blank">📈 HSI Forecast Stock Exchange Prediction (GitHub)</a><p>Developed stock market forecasting model for Hang Seng Index using ML & time series analysis.</p></div>
+      <div class="card"><a href="https://github.com/sandraebby/napal_earthquakes_ARIMA_Model_Forecasting.ipynb" target="_blank">Nepal Earthquakes ARIMA Model Forecasting (GitHub)</a><p>Time series ARIMA model for earthquake activity forecasting.</p></div>
+      <div class="card"><a href="https://gx7lzjydfspnmd9maqxsje.streamlit.app/" target="_blank">Depression Prevalence Prediction (Streamlit)</a><p>ML app predicting depression prevalence based on survey/health data.</p></div>
+    </div>
+
+    <div class="section">
+      <h2>Experience Highlights</h2>
+      <div class="card"><strong>Data Scientist – IBT Learning Africa</strong><br><em>Remote | Feb 2025 – Present</em><p>Develop machine learning models for health-tech and ed-tech solutions. Deploy machine learning models into production using Streamlit Community Cloud. Lead data storytelling projects and create dashboards for decision-making.</p></div>
+      <div class="card"><strong>Cybersecurity Analyst – High Impact Careers, UK</strong><br><em>Remote | Apr 2023 – Jun 2023</em><p>Reduced cyberattacks by 90% with IDS/IPS and enhanced cloud security posture.</p></div>
+      <div class="card"><strong>Assistant Statistician – NOSDRA</strong><br><em>Abuja | Nov 2017 – Oct 2018</em><p>Delivered statistical reports and improved research team workflows.</p></div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="card"><strong>HND Statistics</strong><br>Federal Polytechnic Nasarawa (2017)</div>
+      <div class="card"><strong>ND Statistics</strong><br>Niger State Polytechnic (2011)</div>
+    </div>
+
+    <footer>
+      Portfolio generated for Ananti Sandra — open <strong>index.html</strong> in a browser. Built with ❤️.
+    </footer>
+  </div>
+</body>
+</html>
